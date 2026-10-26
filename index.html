@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaha Santra — Software Engineer</title>
+    <meta name="description" content="Sneaha Santra — Associate Software Engineer at Infosys and UNC Charlotte Computer Science graduate, focused on medical technology and fintech.">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#top" class="nav__logo">Sneaha Santra</a>
+            <ul class="nav__links">
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#focus">Focus</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" id="top">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="hero__inner" data-hero>
+            <p class="eyebrow intro" style="--d:.1s">Associate Software Engineer at Infosys</p>
+            <h1 class="hero__title intro" style="--d:.25s">Sneaha Santra.</h1>
+            <p class="hero__sub intro" style="--d:.45s">Full-stack engineer focused on medical tech and fintech.<br>Building software people can trust.</p>
+            <div class="ctas intro" style="--d:.65s">
+                <a href="#experience" class="btn btn--primary">See my work</a>
+                <a href="#contact" class="link-arrow">Get in touch</a>
+            </div>
+        </div>
+        <a href="#statement" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </header>
+
+    <!-- Scroll-lit statement -->
+    <section class="statement" id="statement">
+        <div class="statement__sticky">
+            <p class="statement__text" data-words>
+                At Infosys, I build and test Spring Boot microservices. On my own, I ship full-stack products — a stock screener, a sleep tracker, an AI navigation guide. The goal is the same: software that's right when people's health and money depend on it.
+            </p>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <p class="eyebrow reveal">Experience</p>
+            <h2 class="section-title reveal">Building enterprise<br>software at Infosys.</h2>
+
+            <article class="xp-feature reveal">
+                <div class="xp-feature__head">
+                    <div>
+                        <span class="xp-role">Associate Software Engineer</span>
+                        <h3>Infosys</h3>
+                    </div>
+                    <span class="xp-date">July 2026 — Present</span>
+                </div>
+                <p class="xp-summary">Developing and testing backend services on an enterprise Java stack — from Spring Boot microservices to the large MySQL database behind them.</p>
+
+                <div class="xp-grid" data-stagger>
+                    <div class="xp-stat reveal">
+                        <span class="xp-stat__kicker">Services</span>
+                        <b>Spring Boot</b>
+                        <p>Building and maintaining microservice components for enterprise applications.</p>
+                    </div>
+                    <div class="xp-stat reveal">
+                        <span class="xp-stat__kicker">Quality</span>
+                        <b>JUnit &amp; Mockito</b>
+                        <p>Writing unit tests that isolate service logic and keep regressions out.</p>
+                    </div>
+                    <div class="xp-stat reveal">
+                        <span class="xp-stat__kicker">Data</span>
+                        <b>MySQL</b>
+                        <p>Working hands-on with a large-scale relational database.</p>
+                    </div>
+                </div>
+
+                <div class="xp-training reveal">
+                    <div>
+                        <h4>Full-stack training program</h4>
+                        <p>Completed Infosys's full-stack curriculum, capped with a microservices capstone project.</p>
+                    </div>
+                    <ul class="tags">
+                        <li>Java</li><li>Spring Boot</li><li>Spring Data JPA</li><li>REST APIs</li><li>Microservices</li>
+                        <li>React</li><li>JavaScript</li><li>HTML5 &amp; CSS</li><li>Bootstrap</li>
+                    </ul>
+                </div>
+            </article>
+
+            <div class="xp-list">
+                <h3 class="xp-list__title reveal">Previously</h3>
+                <div class="xp-item reveal">
+                    <div><b>Data Analyst Intern</b><span>UNC Charlotte</span></div>
+                    <p></p>
+                    <time>Oct — Dec 2025</time>
+                </div>
+                <div class="xp-item reveal">
+                    <div><b>AI Agent Builder Intern</b><span>NeuralSeek</span></div>
+                    <p>Built AI agent evaluation frameworks and reliability infrastructure, and managed AWS experimentation environments.</p>
+                    <time>Aug — Sep 2025</time>
+                </div>
+                <div class="xp-item reveal">
+                    <div><b>AI Researcher</b><span>UNC Charlotte</span></div>
+                    <p>Designed the conversational logic for a patient-facing chatbot.</p>
+                    <time>Jan — May 2025</time>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <p class="eyebrow reveal">Projects</p>
+            <h2 class="section-title reveal">Things I've built.</h2>
+        </div>
+
+        <div class="project-list">
+            <!-- Stock Screener -->
+            <article class="project project--ss reveal">
+                <div class="project__copy">
+                    <span class="project__kicker">FinTech · Deployed</span>
+                    <h3>US Stock Screener</h3>
+                    <p>A deployable screener for Russell 3000 stocks. Filters by price, P/E, volume spikes and RSI, then ranks results with a composite score — with caching, rate-limit handling and CSV export.</p>
+                    <ul class="tags"><li>Python</li><li>FastAPI</li><li>pandas</li><li>yfinance</li><li>Docker</li><li>Render</li></ul>
+                    <a href="https://github.com/ssantra616/stock-screener" class="link-arrow" target="_blank" rel="noopener">View on GitHub</a>
+                </div>
+                <div class="project__visual visual-ss" aria-hidden="true">
+                    <div class="ss-panel">
+                        <div class="ss-filters"><span>$5–$100</span><span>P/E &lt; 20</span><span>Vol &gt; 2×</span><span>RSI 50–100</span></div>
+                        <div class="ss-row ss-row--head"><span>Ticker</span><span>RSI</span><span>Trend</span><span>Score</span></div>
+                        <div class="ss-row" style="--sd:.3s"><b>NOVA</b><span>68.2</span>
+                            <svg viewBox="0 0 100 22" preserveAspectRatio="none"><polyline pathLength="100" points="0,18 15,15 28,16 42,10 56,12 70,7 85,8 100,3"/></svg>
+                            <div class="ss-score"><i style="--w:92%"></i></div></div>
+                        <div class="ss-row" style="--sd:.45s"><b>KITE</b><span>61.7</span>
+                            <svg viewBox="0 0 100 22" preserveAspectRatio="none"><polyline pathLength="100" points="0,16 14,17 28,12 42,13 56,9 70,10 85,6 100,5"/></svg>
+                            <div class="ss-score"><i style="--w:84%"></i></div></div>
+                        <div class="ss-row" style="--sd:.6s"><b>ORBT</b><span>57.4</span>
+                            <svg viewBox="0 0 100 22" preserveAspectRatio="none"><polyline pathLength="100" points="0,14 14,15 28,11 42,14 56,10 70,11 85,8 100,8"/></svg>
+                            <div class="ss-score"><i style="--w:73%"></i></div></div>
+                        <div class="ss-row" style="--sd:.75s"><b>PEAK</b><span>53.9</span>
+                            <svg viewBox="0 0 100 22" preserveAspectRatio="none"><polyline pathLength="100" points="0,13 14,12 28,14 42,11 56,12 70,10 85,11 100,9"/></svg>
+                            <div class="ss-score"><i style="--w:61%"></i></div></div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Somnia -->
+            <article class="project project--sm reveal">
+                <div class="project__copy">
+                    <span class="project__kicker">Health Tech · Web App</span>
+                    <h3>Somnia</h3>
+                    <p>A sleep-tracking web app that turns raw sleep and habit data into a simple sleep score, mood and routine tracking, and personalized insights — without the medical complexity.</p>
+                    <ul class="tags"><li>Django</li><li>pandas</li><li>scikit-learn</li><li>matplotlib</li><li>SQLite</li></ul>
+                    <a href="https://github.com/ssantra616/Somnia---sync-your-sleep" class="link-arrow" target="_blank" rel="noopener">View on GitHub</a>
+                </div>
+                <div class="project__visual visual-sm" aria-hidden="true">
+                    <div class="sm-score">
+                        <svg viewBox="0 0 120 120">
+                            <defs><linearGradient id="smGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5ac8fa"/><stop offset="1" stop-color="#a259ff"/></linearGradient></defs>
+                            <circle class="sm-track" cx="60" cy="60" r="50"/>
+                            <circle class="sm-ring" cx="60" cy="60" r="50" pathLength="100"/>
+                        </svg>
+                        <div class="sm-num"><b>82</b><span>Sleep score</span></div>
+                    </div>
+                    <div class="sm-week">
+                        <span class="sm-week__label">This week</span>
+                        <div class="sm-bars">
+                            <i style="--h:62%;--n:0"></i><i style="--h:78%;--n:1"></i><i style="--h:55%;--n:2"></i><i style="--h:84%;--n:3"></i>
+                            <i style="--h:70%;--n:4"></i><i style="--h:92%;--n:5"></i><i style="--h:80%;--n:6"></i>
+                        </div>
+                        <div class="sm-days"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- TORI -->
+            <article class="project project--tori reveal">
+                <div class="project__copy">
+                    <span class="project__kicker">AI · AI ATL Hackathon</span>
+                    <h3>TORI</h3>
+                    <p>An AI tour companion that helps people navigate unfamiliar cities, campuses and venues — combining conversational guidance, live mapping and a 3D Unity mascot.</p>
+                    <ul class="tags"><li>React Native</li><li>TypeScript</li><li>Gemini 1.5 Flash</li><li>Google Maps API</li><li>Unity</li></ul>
+                    <a href="https://github.com/ssantra616/TORI" class="link-arrow" target="_blank" rel="noopener">View on GitHub</a>
+                </div>
+                <div class="project__visual visual-tori" aria-hidden="true">
+                    <svg class="tori-map" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+                        <g class="blocks">
+                            <rect x="0" y="0" width="60" height="150"/><rect x="100" y="0" width="120" height="70"/><rect x="260" y="0" width="140" height="70"/>
+                            <rect x="100" y="110" width="120" height="40"/><rect x="260" y="110" width="140" height="110"/>
+                            <rect x="0" y="190" width="60" height="110"/><rect x="100" y="190" width="120" height="110"/><rect x="260" y="260" width="140" height="40"/>
+                        </g>
+                        <path class="tori-route" pathLength="100" d="M80 270 V170 H240 V90 H320"/>
+                        <circle class="tori-pulse" cx="320" cy="90" r="8"/>
+                        <circle class="tori-pin" cx="320" cy="90" r="8"/>
+                        <circle class="tori-me" cx="80" cy="270" r="7"/>
+                    </svg>
+                    <div class="tori-chat">
+                        <p class="q">Where's the student union?</p>
+                        <p class="a">Two blocks north — follow the route and I'll guide you.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="more" data-stagger>
+            <a href="https://github.com/ssantra616/Studybud" class="more-card reveal" target="_blank" rel="noopener">
+                <span class="more-card__lang" style="--c:#3572a5">Python · Django</span>
+                <h4>Studybud</h4>
+                <p>A Django web app with server-rendered templates, static assets and a SQLite backend.</p>
+                <span class="link-arrow">View repo</span>
+            </a>
+            <a href="https://github.com/ssantra616/Python-Projects" class="more-card reveal" target="_blank" rel="noopener">
+                <span class="more-card__lang" style="--c:#3572a5">Python</span>
+                <h4>Python Projects</h4>
+                <p>Data structures from scratch — queues, stacks, bags, sorted bags and round-robin scheduling.</p>
+                <span class="link-arrow">View repo</span>
+            </a>
+            <a href="https://github.com/ssantra616/C-projects" class="more-card reveal" target="_blank" rel="noopener">
+                <span class="more-card__lang" style="--c:#8e8e93">C</span>
+                <h4>C Projects</h4>
+                <p>Low-level programming labs in C from my computer systems coursework.</p>
+                <span class="link-arrow">View repo</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Focus -->
+    <section class="section focus" id="focus">
+        <div class="container">
+            <p class="eyebrow reveal">Focus</p>
+            <h2 class="section-title reveal">Where I want to<br>make an impact.</h2>
+            <p class="lead reveal">I'm drawn to fields where software carries real stakes — where reliability, security and clarity directly affect people's health and their money.</p>
+
+            <div class="focus-grid" data-stagger>
+                <article class="focus-card focus-card--med reveal">
+                    <span class="focus-card__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg>
+                    </span>
+                    <h3>Medical Technology</h3>
+                    <p>Software that supports better care — patient-facing tools, health data and systems clinicians can depend on.</p>
+                    <ul class="tags"><li>Health Data</li><li>Patient Experience</li><li>Reliability</li></ul>
+                </article>
+                <article class="focus-card focus-card--fin reveal">
+                    <span class="focus-card__icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M4 18l5-5 4 3 7-8"/><path d="M15 8h5v5"/></svg>
+                    </span>
+                    <h3>Financial Technology</h3>
+                    <p>Secure, scalable systems behind payments, banking and personal finance — where every transaction has to be right.</p>
+                    <ul class="tags"><li>Secure APIs</li><li>Scalable Services</li><li>Data Integrity</li></ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section--light" id="about">
+        <div class="container">
+            <p class="eyebrow reveal">About</p>
+            <h2 class="section-title reveal">Engineer by training.<br>Builder by nature.</h2>
+
+            <div class="bento" data-stagger>
+                <article class="tile tile--wide reveal">
+                    <span class="tile__label">Education</span>
+                    <h3>B.S. Computer Science</h3>
+                    <p>UNC Charlotte, May 2026 — concentration in AI, Robotics &amp; Gaming.</p>
+                </article>
+                <article class="tile tile--dark reveal">
+                    <span class="tile__big tile__big--word">Dean's List</span>
+                    <p>Recognized for academic excellence at UNC Charlotte.</p>
+                </article>
+                <article class="tile tile--full reveal">
+                    <span class="tile__label">Toolkit</span>
+                    <h3>The stack I reach for.</h3>
+                    <ul class="chips">
+                        <li>Java</li><li>Spring Boot</li><li>Spring Data JPA</li><li>Microservices</li><li>REST APIs</li>
+                        <li>JUnit</li><li>Mockito</li><li>MySQL</li><li>Python</li><li>FastAPI</li><li>Django</li><li>pandas</li>
+                        <li>React</li><li>Angular</li><li>React Native</li><li>TypeScript</li><li>JavaScript</li>
+                        <li>Docker</li><li>AWS</li><li>C</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+        <div class="contact__glow" aria-hidden="true"></div>
+        <div class="container">
+            <h2 class="contact__title reveal">Let's build<br>something great.</h2>
+            <p class="contact__sub reveal">Open to software engineering roles in medical technology, fintech and beyond.</p>
+            <div class="ctas reveal">
+                <a href="mailto:sneahasantra16@gmail.com" class="btn btn--primary">Email me</a>
+                <a href="https://www.linkedin.com/in/sneaha-santra-a4256621a/" class="link-arrow" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/ssantra616" class="link-arrow" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <p>© <span data-year>2026</span> Sneaha Santra. Designed and built by hand.</p>
+            <a href="#top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
